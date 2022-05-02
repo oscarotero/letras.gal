@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+  background-color: #efefef;
+  color: #333;
+}
+body {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.4em;
+  line-height: 1.6;
+  max-width: 35em;
+  margin: 0 auto;
+  padding: 1em;
+}
+hr {
+  border: none;
+  border-top: solid 1px;
+  margin: 2em 0;
+  width: 5em;
+  height: 0;
+}
+section {
+  margin: 8em 0;
+}
