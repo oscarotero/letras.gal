@@ -1,10 +1,9 @@
 import lume from "lume/mod.ts";
-import binaryLoader from "lume/core/loaders/binary.ts";
+import postcss from "lume/plugins/postcss.ts";
+import toc from "./scripts/toc.ts";
 
-const site = lume()
+export default lume()
   .ignore("README.md")
   .loadPages([".html"])
-  .loadAssets([".jpg"], binaryLoader)
-  .copy("styles.css");
-
-export default site;
+  .process([".html"], toc)
+  .use(postcss());
