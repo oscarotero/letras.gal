@@ -25,5 +25,5 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "lume"
+          project: "letras"
           entrypoint: "./server.ts"
