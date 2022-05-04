@@ -29,7 +29,10 @@
   --font-size-6-spacing: -0.02em;
 
   @media (max-width: 768px) {
-    --font-size-1: 0.9rem;
+    --font-size-1: 1rem;
     --font-scale: 1.15;
+  }
+  @media (min-width: 1200px) {
+    --font-size-1: 1.2rem;
   }
 }

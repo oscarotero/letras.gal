@@ -1,7 +1,10 @@
 ---
+layout: layouts/base.njk
 title: letras.gal
 ---
 
 <ul>
-  <li><a href="/follas-novas/">Follas Novas</a></li>
+  {% for page in search.pages("url!=/") %}
+  <li><a href="{{ page.data.url }}">{{ page.data.title }}</a></li>
+  {% endfor %}
 </ul>
